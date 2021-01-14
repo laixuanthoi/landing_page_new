@@ -1,5 +1,6 @@
 :root {
   --primary-color: #0030a6;
+  --primary-text-color: #041793;
 }
 @font-face {
   font-family: GoogleSans;
@@ -208,12 +209,13 @@ section {
 .card3-item {
 }
 .card3-avatar {
+  text-align: center;
   margin-bottom: 3rem;
 }
 .card3-title {
   text-align: center;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: var(--primary-text-color);
   font-weight: 700;
   margin: 1rem 0;
 }
@@ -257,8 +259,32 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
 }
+/* 7-gioi thieu */
+.gioi-thieu-text {
+}
+.gioi-thieu-header {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 550;
+  color: var(--primary-text-color);
+  line-height: 2.5rem;
+}
+.gioi-thieu-header .mark {
+  background-color: var(--primary-color);
+  padding: 0 1rem;
+  margin-right: 1rem;
+}
+.gioi-thieu-des {
+  margin: 1rem 0 2rem 0;
+}
 
 /* footer */
+footer a {
+  color: #000;
+}
+footer a:hover {
+  text-decoration: none;
+}
 .footer-brand {
   width: 100%;
   text-align: center;
