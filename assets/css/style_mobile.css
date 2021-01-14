@@ -25,6 +25,10 @@
     height: 85vw;
     margin-top: 3rem;
   }
+  /* 2-the manh */
+  .card-rect .card-avatar .overlay .overlay-text {
+    font-size: 2.5rem;
+  }
 
   .card1-thumbnail img {
     width: 48px;
