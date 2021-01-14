@@ -3,84 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tuyển sinh - Đại học Lạc Hồng 2021, 2022</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/style_mobile.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
   <body>
     <header>
-      <nav
-        id="scrollspy-nav"
-        class="navbar shadow-lg fixed-top navbar-dark navbar-expand-lg bg-transparent"
-      >
+      <nav class="navbar navbar-expand-lg navbar-dark bg-light">
         <div class="container">
-          <a class="navbar-brand text-white d-md-block d-none" href="/">
-            <img src="assets/img/header/logo.png" alt="Lac Hong" />
-          </a>
-          <a
-            class="btn btn-dangky orange-bg-gradient-color"
-            href="#####"
-            target="_blank"
-            >Đăng ký ngay</a
-          >
+          <a class="navbar-brand" href="#"
+            ><img src="assets/img/header/logo.png" alt=""
+          /></a>
           <button
-            class="navbar-toggler no-outline border-0"
+            class="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#main-nav"
-            aria-controls="main-nav"
+            data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <div class="animated-icon2">
-              <span></span><span></span><span></span><span></span>
-            </div>
+            <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="main-nav">
-            <div class="spacer"></div>
-            <ul class="navbar-nav nav mr-auto mt-2 mt-lg-0">
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#ly-do">Lý do</a>
+                <a class="nav-link" href="#uu-dai">ưu đãi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#nganh-dao-tao">Ngành đào tạo</a>
+                <a class="nav-link" href="#the-manh">thế mạnh</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#xet-tuyen">Xét tuyển</a>
+                <a class="nav-link" href="#co-hoi">cơ hội</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#hoc-bong">Học bổng</a>
+                <a class="nav-link" href="#nganh-dao-tao">ngành đào tạo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#co-hoi">Cơ hội</a>
-              </li>
-
-              <!-- <li class="nav-item">
-              <a class="nav-link" href="#blog">Hoạt động</a>
-            </li> -->
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="https://tuyensinh.lhu.edu.vn/thanh-tich-lhu/"
-                  target="_blank"
-                  >Thành tích</a
-                >
+                <a class="nav-link" href="#noi-gi">nói gì về lhu</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div id="intro-section">
+
+      <div id="header-banner">
         <img
           class="img-fluid w-100 d-md-block d-none"
           src="assets/img/header/banner2c.png"
@@ -88,12 +62,13 @@
         />
         <img
           class="img-fluid w-100 d-md-none d-block"
-          src="assets/img/header/banner - mobile.png"
+          src="assets/img/header/banner -mobile.png"
           alt="Banner Tuyen Sinh"
         />
       </div>
     </header>
     <main>
+      <!-- 1 -->
       <section id="uu-dai">
         <div class="header-section-title">
           <span class="upper-text">ưu đãi tuyển sinh</span>
@@ -102,73 +77,66 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-4">
-              <div>
-                <div class="card-circle">
-                  <div class="card-item-wrapper">
-                    <div class="card-thumbnail">
-                      <img
-                        src="assets/img/body/1-uudai/1.png"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                    <div class="card-title">
-                      Một năm học tiếng Anh miễn phí tại Lạc Hồng
-                    </div>
-                  </div>
+              <div class="card1-circle">
+                <div class="card1-thumbnail">
+                  <img
+                    src="assets/img/body/1-uudai/1.png"
+                    alt="Học bổng tiếng Anh"
+                    srcset=""
+                  />
                 </div>
-                <div>Số lượng có hạn</div>
+                <div class="card1-title">
+                  Một năm học tiếng Anh miễn phí tại Lạc Hồng
+                </div>
               </div>
+              <div class="so-luong-co-han">Số lượng có hạn</div>
             </div>
             <div class="col-12 col-md-4">
-              <div>
-                <div class="card-circle">
-                  <div class="card-item-wrapper">
-                    <div class="card-thumbnail">
-                      <img
-                        src="assets/img/body/1-uudai/2.png"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                    <div class="card-title">
-                      2000 học bổng dành tặng sinh viên nhập học sớm
-                    </div>
-                  </div>
+              <div class="card1-circle">
+                <div class="card1-thumbnail">
+                  <img
+                    src="assets/img/body/1-uudai/2.png"
+                    alt="Học vổng nhập học sớm"
+                    srcset=""
+                  />
                 </div>
-                <div>Số lượng có hạn</div>
+                <div class="card1-title">
+                  2000 học bổng dành tặng sinh viên nhập học sớm
+                </div>
               </div>
+              <div class="so-luong-co-han">Số lượng có hạn</div>
             </div>
             <div class="col-12 col-md-4">
-              <div>
-                <div class="card-circle">
-                  <div class="card-item-wrapper">
-                    <div class="card-thumbnail">
-                      <img
-                        src="assets/img/body/1-uudai/3.png"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-                    <div class="card-title">
-                      Một chuyến đi du lịch hè cùng các bạn tân sinh viên
-                    </div>
-                  </div>
+              <div class="card1-circle">
+                <div class="card1-thumbnail">
+                  <img
+                    src="assets/img/body/1-uudai/3.png"
+                    alt="Một chuyến du lịch"
+                    srcset=""
+                  />
                 </div>
-                <div>Số lượng có hạn</div>
+                <div class="card1-title">
+                  Một chuyến đi du lịch cùng các bạn tân sinh viên
+                </div>
               </div>
+              <div class="so-luong-co-han">Số lượng có hạn</div>
             </div>
           </div>
         </div>
 
         <div class="w-100 mt-5">
           <div class="text-center">
-            <a class="btn-action mr-5" href="#">Tìm hiểu ưu đãi</a>
-            <a class="btn-action ml-5" href="#">Tư vấn trực tiếp</a>
+            <a id="btn-uudai" class="btn-action mr-5" href="#"
+              >Tìm hiểu ưu đãi</a
+            >
+            <a id="btn-tuvan" class="btn-action ml-5" href="#"
+              >Tư vấn trực tiếp</a
+            >
           </div>
         </div>
       </section>
 
+      <!-- 2 -->
       <section id="the-manh">
         <div class="header-section-title">
           <span class="upper-text">thế mạnh</span>
@@ -188,12 +156,16 @@
                     />
                   </div>
                   <div class="overlay">
-                    <div>ROBOCON</div>
+                    <div class="overlay-text">robocon</div>
                   </div>
                 </div>
                 <div class="card-body">
-                  <div class="card-header1"><span>01</span> Robocon</div>
-                  <div>lorem ipsum dolor sit amet, consect</div>
+                  <div class="card-header1"><span>01</span>Robocon</div>
+                  <div class="text-justify">
+                    Tối 12/5, đội robot LH-WAO của Trường ĐH Lạc Hồng (Đồng Nai)
+                    đã giành chiến thắng cuộc thi Robocon 2019 để đại diện cho
+                    Việt Nam tham gia cuộc thi châu Á - Thái Bình Dương năm nay
+                  </div>
                 </div>
               </div>
             </div>
@@ -203,18 +175,25 @@
                   <div class="">
                     <img
                       class="img-responsive"
-                      src="assets/img/body/2-themanh/robocon1.png"
+                      src="assets/img/body/2-themanh/xetietkiemnhienlieu1.png"
                       alt=""
                       srcset=""
                     />
                   </div>
                   <div class="overlay">
-                    <div>ROBOCON</div>
+                    <div class="overlay-text">xe tiết kiệm nhiên liệu</div>
                   </div>
                 </div>
                 <div class="card-body">
-                  <div class="card-header1"><span>01</span> Robocon</div>
-                  <div>lorem ipsum dolor sit amet, consect</div>
+                  <div class="card-header1">
+                    <span>02</span>Xe tiết kiệm nhiên liệu
+                  </div>
+                  <div div class="text-justify">
+                    Sinh viên Trường đại học Lạc Hồng vừa tiếp tục bảo vệ thành
+                    công ngôi vô địch tại cuộc thi xe tiết kiệm nhiên liệu châu
+                    Á - Shell Eco Marathon Asia 2019 tổ chức tại Malaysia từ
+                    ngày 28-4 đến 2-5.
+                  </div>
                 </div>
               </div>
             </div>
@@ -224,18 +203,25 @@
                   <div class="">
                     <img
                       class="img-responsive"
-                      src="assets/img/body/2-themanh/robocon1.png"
+                      src="assets/img/body/2-themanh/xekhongnguoilai1.png"
                       alt=""
                       srcset=""
                     />
                   </div>
                   <div class="overlay">
-                    <div>ROBOCON</div>
+                    <div class="overlay-text">xe không người lái</div>
                   </div>
                 </div>
                 <div class="card-body">
-                  <div class="card-header1"><span>01</span> Robocon</div>
-                  <div>lorem ipsum dolor sit amet, consect</div>
+                  <div class="card-header1">
+                    <span>03</span>Xe không người lái
+                  </div>
+                  <div div class="text-justify">
+                    Dù phải đối mặt với hơn 30 đội thi đến từ 5 trường đại học
+                    khác nhưng đại diện của ĐH Lạc Hồng (đội 421- LHU – IRC) vẫn
+                    xuất sắc giành giải Nhất vòng Sơ Khảo khu vực phía Nam vào
+                    chiều 5/1.
+                  </div>
                 </div>
               </div>
             </div>
@@ -245,24 +231,32 @@
                   <div class="">
                     <img
                       class="img-responsive"
-                      src="assets/img/body/2-themanh/robocon1.png"
+                      src="assets/img/body/2-themanh/aun.png"
                       alt=""
                       srcset=""
                     />
                   </div>
                   <div class="overlay">
-                    <div>ROBOCON</div>
+                    <div class="overlay-text">kiểm định chất lượng aun</div>
                   </div>
                 </div>
                 <div class="card-body">
-                  <div class="card-header1"><span>01</span> Robocon</div>
-                  <div>lorem ipsum dolor sit amet, consect</div>
+                  <div class="card-header1">
+                    <span>04</span>Kiểm định chất lượng aun
+                  </div>
+                  <div div class="text-justify">
+                    Ngày 20/6/2019, 2 ngành Công nghệ thông tin và ngành Công
+                    nghệ kỹ thuật Điện – Điện tử của trường Đại học Lạc Hồng đã
+                    hoàn thành đợt đánh giá và được công nhận đạt chuẩn AUN-QA.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- 3 -->
       <section id="co-hoi">
         <div class="header-section-title">
           <span class="upper-text">cơ hội</span>
@@ -364,32 +358,108 @@
           </div>
         </div>
       </section>
+
+      <!-- 4 -->
       <section id="tu-van">
-        <div>
-          <div class="outter"></div>
+        <div class="container">
+          <div class="row text-white">
+            <div class="col-12 col-md-6">
+              <div class="ban-can-tu-van">BẠN CẦN CHÚNG TÔI TƯ VẤN?</div>
+              <p>
+                Để nhận tư vấn miễn phí hoặc tài khoản học thử, bạn có thể liên
+                lạc với chúng tôi qua SDT hoặc để lại thông tin.
+              </p>
+            </div>
+            <div class="col-12 col-md-6">
+              <div
+                class="w-100 h-100 d-flex justify-content-center align-items-center"
+              >
+                <a id="btn-hotline" href="#" class="btn-action text-white"
+                  ><i class="fas fa-phone mr-2"></i> Hotline: (0251) 73 000
+                  73</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      <!-- 5 -->
       <section id="nganh-dao-tao">
         <div class="header-section-title">
           <span class="upper-text">ngành đào tạo</span>
           tại Đại học Lạc Hồng
         </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center mb-4">
+            <div class="col-md-2">
+              <div class="nganh-item"></div>
+            </div>
+            <div class="col-md-2"><div class="nganh-item"></div></div>
+            <div class="col-md-2"><div class="nganh-item"></div></div>
+            <div class="col-md-2"><div class="nganh-item"></div></div>
+            <div class="col-md-2"><div class="nganh-item"></div></div>
+          </div>
+          <div class="row justify-content-center mt-4">
+            <div class="col-md-2">
+              <div class="nganh-item"></div>
+            </div>
+            <div class="col-md-2"><div class="nganh-item"></div></div>
+            <div class="col-md-2"><div class="nganh-item"></div></div>
+            <div class="col-md-2"><div class="nganh-item"></div></div>
+            <div class="col-md-2"><div class="nganh-item"></div></div>
+          </div>
+        </div>
       </section>
-      <section id="quote">
+
+      <!-- 6 -->
+      <section id="noi-gi">
         <div class="header-section-title">
           <span class="upper-text">người ta nói gì</span>
           về Đại học Lạc Hồng
         </div>
       </section>
-      <section id="video-intro"></section>
+
+      <!-- 7 -->
+      <section id="video-intro">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div>
+                <div><span></span>đại học lạc hồng</div>
+                <div>đại học ứng dụng hàng đầu việt nam</div>
+                <div>
+                  LHU tự hào với tỷ lệ 100% sinh viên tốt nghiệp có việc làm và
+                  hệ thống liên kết 800 doanh nghiệp lớn nhỏ trong khu vực.
+                  Trường Đại học Lạc Hồng có lộ trình học quốc tế phù hợp cho
+                  sinh viên cả trong và ngoài nước. Trường cũng tập trung tiếp
+                  nhận và đào tạo các du học sinh về Việt Nam học tập.
+                </div>
+                <a id="btn-chitiet" class="btn-action" href="">Chi tiết</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/0xtSxFWiHKU"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-      <div>
+      <div class="footer-brand">
         <img src="assets/img/footer/logo.png" alt="" />
       </div>
-      <div class="container">
+      <div class="container mb-4">
         <div class="row">
-          <div class="col-6 col-md-3">
+          <div class="col-md-3">
             <img
               class="mr-2"
               src="assets/img/footer/call.png"
@@ -397,7 +467,7 @@
               srcset=""
             />(0251) 73 000 73
           </div>
-          <div class="col-6 col-md-3">
+          <div class="col-md-3">
             <img
               class="mr-2"
               src="assets/img/footer/mail.png"
@@ -405,7 +475,7 @@
               srcset=""
             />tuyensinh@lhu.edu.vn
           </div>
-          <div class="col-6 col-md-3">
+          <div class="col-md-3">
             <img
               class="mr-2"
               src="assets/img/footer/web.png"
@@ -413,7 +483,7 @@
               srcset=""
             />lhu.edu.vn
           </div>
-          <div class="col-6 col-md-3">
+          <div class="col-md-3">
             <img
               class="mr-2"
               src="assets/img/footer/fb.png"
@@ -426,8 +496,6 @@
       <div class="footer-map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.136931624126!2d106.80006621533478!3d10.953027458902811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d95970202f3f%3A0x679e7fa6d33f74e5!2zVHLGsOG7nW5nIMSR4bqhaSBo4buNYyBM4bqhYyBI4buTbmcsIEPGoSBz4bufIDE!5e0!3m2!1svi!2s!4v1609537829767!5m2!1svi!2s"
-          width="100%"
-          height="400"
           frameborder="0"
           style="border: 0"
           allowfullscreen=""
