@@ -277,7 +277,13 @@ section {
 .gioi-thieu-des {
   margin: 1rem 0 2rem 0;
 }
-
+/* 8-du hoc */
+#du-hoc {
+  background-color: #edf7fe;
+}
+.gallery {
+  column-count: 3;
+}
 /* footer */
 footer a {
   color: #000;
