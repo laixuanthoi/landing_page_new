@@ -26,6 +26,9 @@
     margin-top: 3rem;
   }
 
+  .card1-thumbnail img {
+    width: 48px;
+  }
   .so-luong-co-han {
     margin-bottom: 1.5rem;
   }

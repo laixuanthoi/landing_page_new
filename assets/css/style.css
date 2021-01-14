@@ -84,7 +84,7 @@ section {
 }
 
 .card1-thumbnail img {
-  width: 50%;
+  width: 60px;
 }
 .card1-title {
   margin-top: 1rem;
@@ -94,7 +94,7 @@ section {
 
 .so-luong-co-han {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 1.1rem;
   color: var(--primary-color);
 }
