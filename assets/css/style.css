@@ -94,7 +94,7 @@ section {
 
 .so-luong-co-han {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 1.1rem;
   color: var(--primary-color);
 }
@@ -125,8 +125,8 @@ section {
 
 #the-manh {
   background-color: #edf7fe;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  /* padding-left: 3rem;
+  padding-right: 3rem; */
 }
 .card-rect {
   border-radius: 16px;
@@ -169,14 +169,20 @@ section {
   transition-property: all;
   transition-duration: 0.75s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  height: 3.5rem;
+  height: 0;
 }
 .card-rect .card-avatar .overlay:hover {
   transition-property: all;
   transition-duration: 0.75s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  height: 3.5rem;
+  height: 0;
 }
+
+.card-rect .card-avatar:hover .overlay .overlay-text,
+.card-rect .card-avatar .overlay:hover .overlay-text {
+  display: none;
+}
+
 .card-rect .card-avatar .overlay > div {
   opacity: 0.75;
   color: #ffffffb9;
@@ -247,10 +253,25 @@ section {
 
 .nganh-item {
   width: 100%;
-  height: 200px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 16px;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 0;
+}
+
+.nganh-logo {
+}
+.nganh-logo img {
+  max-width: 80%;
+  padding-bottom: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+.nganh-title {
+  text-align: center;
+  font-size: 0.9rem;
+  width: 100%;
+  height: 1.4rem;
 }
 
 /* 6-noi gi */
@@ -259,6 +280,23 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.noi-gi-item {
+}
+.noi-gi-thumb img {
+  max-width: 100%;
+}
+.noi-gi-body {
+  text-align: center;
+  margin-top: 1rem;
+}
+.noi-gi-title {
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 650;
+  margin-bottom: 0.5rem;
+}
+
 /* 7-gioi thieu */
 .gioi-thieu-text {
 }
@@ -283,6 +321,9 @@ section {
 }
 .gallery {
   column-count: 3;
+}
+.gallery img {
+  border-radius: 2px;
 }
 /* footer */
 footer a {

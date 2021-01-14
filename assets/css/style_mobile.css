@@ -1,2 +1,30 @@
 @media only screen and (max-width: 767px) {
+  /* header */
+  .header-section-title {
+    font-size: 1.25rem;
+  }
+  .header-section-title .upper-text {
+    font-size: 1.75rem;
+    font-weight: 800;
+  }
+
+  /* 1-uu dai */
+  .card1-circle {
+    width: 85vw;
+    height: 85vw;
+    margin-top: 3rem;
+  }
+
+  .so-luong-co-han {
+    margin-bottom: 1.5rem;
+  }
+  /* 8-du hoc */
+  .gallery {
+    column-count: 1;
+  }
+  /* footer */
+  .footer-brand img {
+    width: 180px;
+    height: auto;
+  }
 }
