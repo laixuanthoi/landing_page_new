@@ -18,6 +18,20 @@
     font-size: 1.75rem;
     font-weight: 800;
   }
+  .btn-dangkyuudai {
+    bottom: 20%;
+    right: 15%;
+  }
+  .btn-dangkyuudai a {
+    background-image: -webkit-linear-gradient(0deg, #dfa209 0%, #fad065 99%);
+    border: 2px solid #fff;
+    font-size: 1.25rem;
+    letter-spacing: 1.5px;
+  }
+  .btn-dangkyuudai a span {
+    text-transform: uppercase;
+    font-weight: 800;
+  }
 
   /* 1-uu dai */
   .card1-circle {
