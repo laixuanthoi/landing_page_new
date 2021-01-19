@@ -100,7 +100,7 @@ section {
 }
 
 .card1-thumbnail img {
-  width: 60px;
+  width: 80px;
 }
 .card1-title {
   margin-top: 1rem;
@@ -340,6 +340,16 @@ section {
 }
 .gallery img {
   border-radius: 2px;
+}
+.bottom-text {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  font-size: 1rem;
+  padding: 8px;
+  color: #fff;
+  text-align: justify;
 }
 /* footer */
 footer a {

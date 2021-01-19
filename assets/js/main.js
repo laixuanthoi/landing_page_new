@@ -1,3 +1,11 @@
+function extractUrlValue(key, url) {
+  if (typeof url === "undefined") {
+    url = window.location.href;
+  }
+  var match = url.match("[?&]" + key + "=([^&#]+)");
+  return match ? match[1] : null;
+}
+
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     margin: 10,
@@ -11,4 +19,7 @@ $(document).ready(function () {
       },
     },
   });
+  const btn_val = atob(extractUrlValue("btn"));
+  const link_val = atob(extractUrlValue("link"));
+  console.log(btn_val, link_val);
 });
