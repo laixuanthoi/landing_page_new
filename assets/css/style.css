@@ -97,6 +97,10 @@ section {
   flex-direction: column;
   background-color: #fff;
   margin: 0 auto;
+  color: #000;
+}
+.card1-circle:hover {
+  text-decoration: none;
 }
 
 .card1-thumbnail img {
@@ -296,8 +300,14 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.noi-gi-item {
+.noi-gi-item:hover .noi-gi-des {
+  text-decoration: none;
 }
+
+.noi-gi-des {
+  color: #000;
+}
+
 .noi-gi-thumb img {
   max-width: 100%;
 }
