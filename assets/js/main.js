@@ -1,9 +1,10 @@
-function extractUrlValue(key, url) {
-  if (typeof url === "undefined") {
-    url = window.location.href;
+function extractUrlValue(key) {
+  const url = decodeURIComponent(window.location.href);
+  if (!url) {
+    return;
   }
-  var match = url.match("[?&]" + key + "=([^&#]+)");
-  return match ? match[1] : null;
+  const match = url.match("[?&]" + key + "=([^&#]+)");
+  return match ? decodeURIComponent(escape(atob(match[1]))) : null;
 }
 
 $(document).ready(function () {
@@ -19,7 +20,13 @@ $(document).ready(function () {
       },
     },
   });
-  const btn_val = atob(extractUrlValue("btn"));
-  const link_val = atob(extractUrlValue("link"));
-  console.log(btn_val, link_val);
+  const btn_val = extractUrlValue("btn");
+  const link_val = extractUrlValue("link");
+  // console.log(btn_val, link_val);
+  const btn_uudai = $("#btn-uudai");
+
+  if (btn_val && link_val) {
+    btn_uudai.attr("href", link_val);
+    btn_uudai.text(btn_val);
+  }
 });
