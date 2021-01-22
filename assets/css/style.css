@@ -127,6 +127,8 @@ section {
     var(--primary-color) 0%,
     #4ba7fe 100%
   );
+  padding: 8px 16px;
+  font-size: 1rem;
 }
 
 .btn-action {
@@ -395,4 +397,5 @@ footer a:hover {
   line-height: 2rem;
   text-align: center;
   color: #fff;
+  padding: 8px 0;
 }
