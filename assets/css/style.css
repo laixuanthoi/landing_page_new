@@ -143,6 +143,23 @@ section {
   color: #fff;
 }
 
+.modal {
+  padding: 0 !important;
+}
+.modal .modal-dialog {
+  width: 85%;
+  max-width: none;
+  height: auto;
+  margin: 0 auto;
+}
+.modal .modal-content {
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+}
+.modal .modal-body {
+  overflow-y: auto;
+}
 /* 2-the manh */
 
 #the-manh {
