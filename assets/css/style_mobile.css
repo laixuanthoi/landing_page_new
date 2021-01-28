@@ -47,6 +47,10 @@
   .so-luong-co-han {
     margin-bottom: 1.5rem;
   }
+  /* 5-nganh dao tao */
+  .nganh-item {
+    width: 90%;
+  }
   /* 8-du hoc */
   .gallery {
     column-count: 1;
